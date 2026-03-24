@@ -26,3 +26,23 @@ let user: UserType = {
 };
 
 greet(user);
+
+
+interface People {
+  name: string;
+  age: number;
+}
+
+class Manager implements People {
+  name: string;
+  age: number;
+  number: string;
+
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+    this.number = "12321";
+  }
+}
+let user1 = new Manager("Deepak", 22);
+console.log(user1.number);
