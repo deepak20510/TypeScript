@@ -19,3 +19,49 @@ function log() {
   return 1;
 }
 delayedCall(log);
+
+function isEven(num: number): Boolean {
+  if (num % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isEven(5));
+
+interface Address {
+  city: string;
+  country: string;
+  pincode: number;
+}
+
+interface User {
+  name: string;
+  age: number;
+  address: Address;
+}
+
+let user: User = {
+  name: "Deepak",
+  age: 22,
+  address: {
+    city: "Jamshedpur",
+    country: "India",
+    pincode: 812100,
+  },
+};
+
+function isLegal(user: User): Boolean {
+  if (user.age >= 18) {
+    return true;
+  } else {
+    return false;
+  }
+}
+const anss = isLegal(user);
+if (anss) {
+  console.log("I am Legal");
+} else {
+  console.log("I am not Legal");
+}
