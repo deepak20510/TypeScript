@@ -1,6 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function updateProps(updateProps) {
     //hit the database to update the user
 }
+export {};
 //# sourceMappingURL=pick.js.map
